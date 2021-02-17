@@ -2,7 +2,7 @@ import React from 'react'
 import {Switch,Route,Router,HashHistory,Link, HashRouter} from 'react-router-dom'
 import Home from './view/Home'
 import About from './view/About'
-import './App.css';
+import './App.scss';
 
 class App extends React.Component {
   constructor(props){
