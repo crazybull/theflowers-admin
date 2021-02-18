@@ -1,8 +1,6 @@
 import React from 'react'
-import {Switch,Route,Router,HashHistory,Link, HashRouter} from 'react-router-dom'
-import Home from './view/Home'
-import About from './view/About'
-import './App.scss';
+import {Switch,Route,Link, HashRouter} from 'react-router-dom'
+import Login from './view/login'
 
 class App extends React.Component {
   constructor(props){
@@ -13,8 +11,7 @@ class App extends React.Component {
     return (
       <HashRouter>
         <Switch>
-          <Route component={Home} exact path='/'/>
-          <Route component={About} path='/about'/>
+          <Route component={Login} exact path='/'/>
         </Switch>
       </HashRouter>
     )
